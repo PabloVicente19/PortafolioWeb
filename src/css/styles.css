@@ -137,18 +137,37 @@ body{
 }
 /* stack content */
 .stack-container{
+    max-width: 1000px;
+    margin: 0 auto;
     border: 1px solid var(--white);
     border-radius: 1rem;
     padding: 1rem;
 }
-.skill{
-    height: 300px;
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    text-align: center;
+    row-gap: 2rem;
+}
+.stack-title{
+    margin: 1rem auto;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.skill-container-img{
     display: flex;
-    flex-flow: row wrap;
+    height: 100px;
 }
 .skill-img{
-    display: flex;
-    height: 50%;
-    object-fit: cover;    
+    border-radius: 1rem;
+}
+.skill-description{
+    display: block;
+    margin: .5rem auto;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--white);
 }
 /* about me content */

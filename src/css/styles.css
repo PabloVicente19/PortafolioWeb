@@ -32,6 +32,7 @@
     --darkTransparent:#2b2d2d98;
     --white:#f5f2f2;
     --blueDark:#062136;
+    --golden:#dbba09;
     --gradient-text:linear-gradient(
         120deg,
         hsl(240deg 76% 71%) 0%,
@@ -45,6 +46,7 @@
         hsl(40deg 26% 57%) 94%,
         hsl(56deg 16% 58%) 100%
       );
+      
 }
 body{
     background-color: var(--blueDark);
@@ -106,7 +108,7 @@ body{
 }
 .hero-networks{
     margin: 1.5rem;
-    margin-left: 8rem;
+    margin-left: 7rem;
     display: flex;
     gap: 4rem;
 }
@@ -114,6 +116,7 @@ body{
     color: var(--white);
     font-size: 2rem;
 }
+
 .btnContactMe{
     cursor: pointer;
     padding: .5rem 2rem;
@@ -171,3 +174,95 @@ body{
     color: var(--white);
 }
 /* about me content */
+
+/* footer content */
+.footer-container{
+  background-color: var(--dark);
+  padding-top: 2rem;
+}
+/* section of contact */
+.contact-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+}
+.contact-title{
+  color: var(--white);
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form-field{
+  width: 300px;
+  margin: .3rem;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form-label{
+  color: var(--white);
+  padding-bottom: 4px;
+}
+.contact-form-input{
+  height: 40px;
+  font-size: 1rem;
+  text-indent: .5rem;
+  border: none;
+  border-radius: .4rem;
+  outline: none;
+}
+.contact-form-textarea{
+  font-size: 1rem;
+  text-indent: .5rem;
+  border: none;
+  border-radius: .4rem;
+  outline: none;
+  padding-top: .4rem;
+}
+.contact-form-btn{
+  width: 80%;
+  margin: .5rem auto 0 auto;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: var(--golden);
+  font-size: .9rem;
+}
+/* section of copyright */
+.copy{
+  border-top: 1px solid var(--white);
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: var(--white);
+}
+.copy p a{
+  color: gold;
+  position: relative;
+}
+.copy  p a::before{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: var(--golden);
+  transition: width .3s;
+}
+.copy  p a:hover::before{
+  width: 100%;
+  transition: width .3s;
+}
+.copy-icons-content{
+  margin: 1rem auto;
+}

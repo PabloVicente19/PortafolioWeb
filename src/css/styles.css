@@ -24,6 +24,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 :root{
     --red:#dd3f3f;

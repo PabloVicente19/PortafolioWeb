@@ -234,6 +234,9 @@ body{
   background-color: var(--golden);
   font-size: .9rem;
 }
+.contact-form-btn:hover{
+  opacity: 0.7;
+}
 /* section of copyright */
 .copy{
   border-top: 1px solid var(--white);

@@ -191,7 +191,22 @@ body{
     color: var(--white);
 }
 /* about me content */
+/* projects */
 
+.projects-container{
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.project-title{
+  color: var(--white);
+}
+.projects-content{
+  max-width: 1000px;
+  margin: auto;
+  border: 1px solid white;
+
+}
 /* footer content */
 .footer-container{
   background-color: var(--dark);

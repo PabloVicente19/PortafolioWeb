@@ -75,7 +75,23 @@ body{
 .navbar-list-item{
     color: var(--white);
     font-size: 14px;
+    position: relative;
 }
+.navbar-list-item::after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--gradient-text);
+  transition: width .3s;
+}
+.navbar-list-item:hover::after{
+  width: 100%;
+}
+
 /* hero content */
 .hero-container{
     max-width: 1200px;
@@ -187,9 +203,13 @@ body{
   margin: 0 auto;
   padding: 0 2rem;
   padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .contact-title{
   color: var(--white);
+  flex-basis: 100%;
 }
 .contact-form{
   display: flex;

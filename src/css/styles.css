@@ -194,17 +194,23 @@ body{
 /* projects */
 
 .projects-container{
-  margin: 2rem auto;
-  padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    border: 1px solid var(--white);
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .project-title{
-  color: var(--white);
+
+    margin: 1rem auto;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    color: var(--white); 
 }
 .projects-content{
   max-width: 1000px;
   margin: auto;
-  border: 1px solid white;
 
 }
 /* footer content */
